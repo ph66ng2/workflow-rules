@@ -12,6 +12,7 @@ Copie `workflow.template.json` para `workflow.json` no repositório de produto. 
 4. O agente executa testes e deixa um PR pronto; o merge é quase sempre humano, caso ele te dê permissão explicita, faca o merge.
 5. Somente após validação e promoção humana ou tua as mudanças seguem de `baseBranch` para `promotionTarget`, que representa a linha usada em produção.
 6. Após o merge, mude o `status` do ticket para `merged` e rode o plano novamente.
+7. Exclua a Branch no local caso você tenha criado e caso, você tenha dado o merge, pergunte se é para excluir a Branch virtual também
 
 ## Comandos
 
