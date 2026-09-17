@@ -9,8 +9,8 @@ Copie `workflow.template.json` para `workflow.json` no repositório de produto. 
 1. Primeiro, transforme uma feature em tickets no `workflow.json`.
 2. Depois, implemente somente tickets que aparecem como `PRONTA`.
 3. Cada ticket usa uma worktree e uma branch próprias, criadas exclusivamente a partir de `baseBranch`.
-4. O agente executa testes e deixa um PR pronto; o merge é sempre humano.
-5. Somente após validação e promoção humana as mudanças seguem de `baseBranch` para `promotionTarget`, que representa a linha usada em produção.
+4. O agente executa testes e deixa um PR pronto; o merge é quase sempre humano, caso ele te dê permissão explicita, faca o merge.
+5. Somente após validação e promoção humana ou tua as mudanças seguem de `baseBranch` para `promotionTarget`, que representa a linha usada em produção.
 6. Após o merge, mude o `status` do ticket para `merged` e rode o plano novamente.
 
 ## Comandos
